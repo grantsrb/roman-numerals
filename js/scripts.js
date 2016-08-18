@@ -4,7 +4,7 @@ function Numeralize(numberIn) {
   var tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
   var hundos = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
   var thousands = ["", "M", "MM", "MMM"];
-  var numOneIn = parseInt(numberIn.slice(-1));
+  var numOneIn = parseInt(numberIn.slice(-1, -1));
   var numTensIn = parseInt(numberIn.slice(-2, -1));
   var numHundosIn = parseInt(numberIn.slice(-3, -2));
   var numThousandsIn = parseInt(numberIn.slice(-4, -3));
